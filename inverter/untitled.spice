@@ -1,0 +1,29 @@
+** sch_path: /home/aimans06/untitled.sch
+**.subckt untitled
+XM1 out in GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 out in net1 net1 sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+V1 net1 GND 3.3
+V2 in GND 0
+**** begin user architecture code
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /home/aimans06/pdk/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /home/aimans06/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /home/aimans06/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /home/aimans06/pdk/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+
+
+.control
+dc V2 0 3.3 0.0115
+plot out in
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end

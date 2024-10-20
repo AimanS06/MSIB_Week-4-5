@@ -1,0 +1,66 @@
+timestamp 1729440198
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__nfet_01v8_6H9P4D sky130_fd_pr__nfet_01v8_6H9P4D_5 1 0 945 0 1 188
+use sky130_fd_pr__nfet_01v8_6H9P4D sky130_fd_pr__nfet_01v8_6H9P4D_3 1 0 -15 0 1 658
+use sky130_fd_pr__nfet_01v8_6H9P4D sky130_fd_pr__nfet_01v8_6H9P4D_1 1 0 945 0 1 658
+use sky130_fd_pr__nfet_01v8_6H9P4D sky130_fd_pr__nfet_01v8_6H9P4D_0 1 0 -15 0 1 188
+use sky130_fd_pr__nfet_01v8_5MNGEB sky130_fd_pr__nfet_01v8_5MNGEB_3 1 0 683 0 1 658
+use sky130_fd_pr__nfet_01v8_5MNGEB sky130_fd_pr__nfet_01v8_5MNGEB_2 1 0 683 0 1 188
+use sky130_fd_pr__nfet_01v8_5MNGEB sky130_fd_pr__nfet_01v8_5MNGEB_1 1 0 247 0 1 188
+use sky130_fd_pr__nfet_01v8_5MNGEB sky130_fd_pr__nfet_01v8_5MNGEB_0 1 0 247 0 1 658
+port "OUT" 3 901 422 901 422 m2
+port "D8" 2 29 503 29 503 m1
+port "GND" 5 1090 419 1090 419 v0
+node "m1_392_320#" 0 0 392 320 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "OUT" 0 0 901 422 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_58_376#" 0 0 58 376 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_930_758#" 0 0 930 758 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "D8" 0 0 29 503 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "GND" 0 0 1090 419 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_0/a_29_n188#" "sky130_fd_pr__nfet_01v8_5MNGEB_0/a_n247_n100#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_0/a_n247_n100#" "sky130_fd_pr__nfet_01v8_6H9P4D_3/a_15_n100#"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_3/a_15_n100#" "sky130_fd_pr__nfet_01v8_6H9P4D_3/a_n73_n100#"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_3/a_n73_n100#" "sky130_fd_pr__nfet_01v8_6H9P4D_3/a_n15_n126#"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_3/a_n15_n126#" "D8"
+merge "D8" "sky130_fd_pr__nfet_01v8_5MNGEB_0/a_n189_n188#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_0/a_n189_n188#" "sky130_fd_pr__nfet_01v8_5MNGEB_1/a_189_n100#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_1/a_189_n100#" "sky130_fd_pr__nfet_01v8_5MNGEB_1/a_29_n188#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_1/a_29_n188#" "sky130_fd_pr__nfet_01v8_5MNGEB_1/a_n189_n188#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_1/a_n189_n188#" "sky130_fd_pr__nfet_01v8_5MNGEB_2/a_n247_n100#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_2/a_n247_n100#" "sky130_fd_pr__nfet_01v8_5MNGEB_2/a_29_n188#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_2/a_29_n188#" "m1_392_320#"
+merge "m1_392_320#" "sky130_fd_pr__nfet_01v8_5MNGEB_2/a_n189_n188#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_2/a_n189_n188#" "sky130_fd_pr__nfet_01v8_5MNGEB_3/a_29_n188#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_3/a_29_n188#" "sky130_fd_pr__nfet_01v8_5MNGEB_3/a_n189_n188#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_3/a_n189_n188#" "a_58_376#"
+merge "a_58_376#" "sky130_fd_pr__nfet_01v8_5MNGEB_3/a_189_n100#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_3/a_189_n100#" "sky130_fd_pr__nfet_01v8_6H9P4D_1/a_15_n100#"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_1/a_15_n100#" "sky130_fd_pr__nfet_01v8_6H9P4D_1/a_n73_n100#"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_1/a_n73_n100#" "sky130_fd_pr__nfet_01v8_6H9P4D_1/a_n15_n126#"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_1/a_n15_n126#" "a_930_758#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_0/VSUBS" "sky130_fd_pr__nfet_01v8_5MNGEB_0/a_n29_n100#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_0/a_n29_n100#" "sky130_fd_pr__nfet_01v8_5MNGEB_1/VSUBS"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_1/VSUBS" "sky130_fd_pr__nfet_01v8_5MNGEB_1/a_n29_n100#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_1/a_n29_n100#" "sky130_fd_pr__nfet_01v8_5MNGEB_2/VSUBS"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_2/VSUBS" "sky130_fd_pr__nfet_01v8_5MNGEB_2/a_n29_n100#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_2/a_n29_n100#" "sky130_fd_pr__nfet_01v8_5MNGEB_3/VSUBS"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_3/VSUBS" "sky130_fd_pr__nfet_01v8_5MNGEB_3/a_n29_n100#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_3/a_n29_n100#" "sky130_fd_pr__nfet_01v8_6H9P4D_0/VSUBS"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_0/VSUBS" "sky130_fd_pr__nfet_01v8_6H9P4D_1/VSUBS"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_1/VSUBS" "sky130_fd_pr__nfet_01v8_6H9P4D_3/VSUBS"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_3/VSUBS" "sky130_fd_pr__nfet_01v8_6H9P4D_5/VSUBS"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_5/VSUBS" "GND"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_0/a_189_n100#" "sky130_fd_pr__nfet_01v8_5MNGEB_1/a_n247_n100#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_1/a_n247_n100#" "sky130_fd_pr__nfet_01v8_5MNGEB_2/a_189_n100#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_2/a_189_n100#" "sky130_fd_pr__nfet_01v8_5MNGEB_3/a_n247_n100#"
+merge "sky130_fd_pr__nfet_01v8_5MNGEB_3/a_n247_n100#" "sky130_fd_pr__nfet_01v8_6H9P4D_0/a_15_n100#"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_0/a_15_n100#" "sky130_fd_pr__nfet_01v8_6H9P4D_0/a_n73_n100#"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_0/a_n73_n100#" "sky130_fd_pr__nfet_01v8_6H9P4D_0/a_n15_n126#"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_0/a_n15_n126#" "sky130_fd_pr__nfet_01v8_6H9P4D_5/a_15_n100#"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_5/a_15_n100#" "sky130_fd_pr__nfet_01v8_6H9P4D_5/a_n73_n100#"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_5/a_n73_n100#" "sky130_fd_pr__nfet_01v8_6H9P4D_5/a_n15_n126#"
+merge "sky130_fd_pr__nfet_01v8_6H9P4D_5/a_n15_n126#" "OUT"

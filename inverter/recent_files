@@ -1,0 +1,58 @@
+set recentfile {/home/aimans06/inverter/invertercoba.sch /home/aimans06/invertercoba.sch /home/aimans06/untitled.sch}
+array set ::c_toolbar::c_t_4004404748 {14,file /usr/local/share/xschem/xschem_library/devices/code.sym 9,text {} 8,file {} 12,text ipin 11,file /usr/local/share/xschem/xschem_library/devices/opin.sym time 1728974258 24,text pfet 6,text {} 23,file /usr/local/share/xschem/xschem_library/devices/pmos.sym 5,file {} top 11 21,text nfet_01v8 hash 4004404748 3,text {} 20,file /home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8_esd.sym 19,file /home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet3_01v8.sym 2,file {} 17,text vsource 0,text {} 16,file /usr/local/share/xschem/xschem_library/devices/gnd.sym 10,command {} 11,command {
+      set file_dialog_retval {}
+      xschem abort_operation
+      file_dialog_display_preview {/usr/local/share/xschem/xschem_library/devices/opin.sym}
+      xschem place_symbol {/usr/local/share/xschem/xschem_library/devices/opin.sym} } 12,command {
+      set file_dialog_retval {}
+      xschem abort_operation
+      file_dialog_display_preview {/usr/local/share/xschem/xschem_library/devices/ipin.sym}
+      xschem place_symbol {/usr/local/share/xschem/xschem_library/devices/ipin.sym} } 14,text code 13,command {
+      set file_dialog_retval {}
+      xschem abort_operation
+      file_dialog_display_preview {/home/aimans06/invertercoba.sym}
+      xschem place_symbol {/home/aimans06/invertercoba.sym} } 13,file /home/aimans06/invertercoba.sym 14,command {
+      set file_dialog_retval {}
+      xschem abort_operation
+      file_dialog_display_preview {/usr/local/share/xschem/xschem_library/devices/code.sym}
+      xschem place_symbol {/usr/local/share/xschem/xschem_library/devices/code.sym} } 15,command {
+      set file_dialog_retval {}
+      xschem abort_operation
+      file_dialog_display_preview {/home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/corner.sym}
+      xschem place_symbol {/home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/corner.sym} } 8,text {} 16,command {
+      set file_dialog_retval {}
+      xschem abort_operation
+      file_dialog_display_preview {/usr/local/share/xschem/xschem_library/devices/gnd.sym}
+      xschem place_symbol {/usr/local/share/xschem/xschem_library/devices/gnd.sym} } 17,command {
+      set file_dialog_retval {}
+      xschem abort_operation
+      file_dialog_display_preview {/usr/local/share/xschem/xschem_library/devices/vsource.sym}
+      xschem place_symbol {/usr/local/share/xschem/xschem_library/devices/vsource.sym} } 0,command {} 7,file {} 11,text opin 18,command {
+      set file_dialog_retval {}
+      xschem abort_operation
+      file_dialog_display_preview {/home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym}
+      xschem place_symbol {/home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} } 1,command {} 20,command {
+      set file_dialog_retval {}
+      xschem abort_operation
+      file_dialog_display_preview {/home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8_esd.sym}
+      xschem place_symbol {/home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8_esd.sym} } 19,command {
+      set file_dialog_retval {}
+      xschem abort_operation
+      file_dialog_display_preview {/home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet3_01v8.sym}
+      xschem place_symbol {/home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet3_01v8.sym} } 2,command {} 10,file {} 23,text pmos 21,command {
+      set file_dialog_retval {}
+      xschem abort_operation
+      file_dialog_display_preview {/home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym}
+      xschem place_symbol {/home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} } 3,command {} 5,text {} 22,command {
+      set file_dialog_retval {}
+      xschem abort_operation
+      file_dialog_display_preview {/usr/local/share/xschem/xschem_library/devices/nmos.sym}
+      xschem place_symbol {/usr/local/share/xschem/xschem_library/devices/nmos.sym} } 4,command {} 22,file /usr/local/share/xschem/xschem_library/devices/nmos.sym 23,command {
+      set file_dialog_retval {}
+      xschem abort_operation
+      file_dialog_display_preview {/usr/local/share/xschem/xschem_library/devices/pmos.sym}
+      xschem place_symbol {/usr/local/share/xschem/xschem_library/devices/pmos.sym} } 5,command {} 4,file {} 24,command {
+      set file_dialog_retval {}
+      xschem abort_operation
+      file_dialog_display_preview {/home/aimans06/pfet}
+      xschem place_symbol {/home/aimans06/pfet} } 6,command {} 7,command {} 20,text nfet_01v8_esd 19,text nfet3_01v8 2,text {} 8,command {} 9,command {} 18,file /home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym 1,file {} 16,text gnd 15,file /home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/corner.sym 9,file {} 13,text invertercoba n 25 12,file /usr/local/share/xschem/xschem_library/devices/ipin.sym 7,text {} 24,file /home/aimans06/pfet 6,file {} 10,text {} 22,text nmos 4,text {} 21,file /home/aimans06/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym w .load.l.recent 3,file {} 18,text pfet_01v8 1,text {} 17,file /usr/local/share/xschem/xschem_library/devices/vsource.sym 0,file {} 15,text corner}
