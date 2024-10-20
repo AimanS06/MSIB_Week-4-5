@@ -1,0 +1,63 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1729417184
+<< locali >>
+rect 388 1290 1720 1292
+rect 388 1266 1722 1290
+rect 388 1174 450 1266
+rect 1660 1174 1722 1266
+rect 388 1154 1722 1174
+rect 396 192 1720 200
+rect 396 120 454 192
+rect 1664 120 1720 192
+rect 396 100 1720 120
+<< viali >>
+rect 450 1174 1660 1266
+rect 454 120 1664 192
+<< metal1 >>
+rect 388 1288 1720 1292
+rect 388 1282 1722 1288
+rect 388 1266 1723 1282
+rect 388 1174 450 1266
+rect 1660 1182 1723 1266
+rect 1660 1174 1722 1182
+rect 388 1154 1722 1174
+rect 599 649 609 701
+rect 661 649 766 701
+rect 1038 649 1186 701
+rect 1459 649 1561 701
+rect 1613 649 1623 701
+rect 395 192 1721 199
+rect 395 120 454 192
+rect 1664 120 1721 192
+rect 395 99 1721 120
+<< via1 >>
+rect 609 649 661 701
+rect 1561 649 1613 701
+<< metal2 >>
+rect 609 701 661 711
+rect 1561 701 1613 711
+rect 661 658 1561 691
+rect 609 639 661 649
+rect 1561 639 1613 649
+use invertercoba  x1
+timestamp 1729064926
+transform 1 0 477 0 1 106
+box -53 9 369 1138
+use invertercoba  x2
+timestamp 1729064926
+transform 1 0 897 0 1 106
+box -53 9 369 1138
+use invertercoba  x3
+timestamp 1729064926
+transform 1 0 1318 0 1 106
+box -53 9 369 1138
+<< labels >>
+flabel viali 466 146 468 146 0 FreeSans 480 0 0 0 gnd
+port 3 nsew
+flabel via1 1587 674 1587 674 0 FreeSans 320 0 0 0 out
+port 10 nsew
+flabel viali 563 1194 563 1194 0 FreeSans 320 0 0 0 vdd
+port 12 nsew
+<< end >>

@@ -1,0 +1,58 @@
+** sch_path: /home/aimans06/ringosi/tbringosi.sch
+**.subckt tbringosi out
+*.opin out
+V1 net1 GND 3.3
+x1 net1 out GND ringosi
+**** begin user architecture code
+
+
+.option wnflag=0
+.option savecurrents
+.control
+save all
+tran 1ps 10ns
+plot out
+op
+.endc
+
+
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /home/aimans06/pdk/sky130A/libs.tech/ngspice/corners/tt.spice
+.include /home/aimans06/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /home/aimans06/pdk/sky130A/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /home/aimans06/pdk/sky130A/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /home/aimans06/ringosi/ringosi.sym # of pins=3
+** sym_path: /home/aimans06/ringosi/ringosi.sym
+** sch_path: /home/aimans06/ringosi/ringosi.sch
+.subckt ringosi vdd out gnd
+*.iopin vdd
+*.iopin gnd
+*.opin out
+x1 vdd out net1 gnd invertercoba
+x2 vdd net1 net2 gnd invertercoba
+x3 vdd net2 out gnd invertercoba
+.ends
+
+
+* expanding   symbol:  /home/aimans06/ringosi/invertercoba.sym # of pins=4
+** sym_path: /home/aimans06/ringosi/invertercoba.sym
+** sch_path: /home/aimans06/ringosi/invertercoba.sch
+.subckt invertercoba vdd in out gnd
+*.ipin vdd
+*.ipin in
+*.ipin gnd
+*.opin out
+XM1 out in gnd GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 out in vdd vdd sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.end

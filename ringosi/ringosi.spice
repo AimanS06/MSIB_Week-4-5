@@ -1,0 +1,11 @@
+** sch_path: /home/aimans06/ringosi/ringosi.sch
+**.subckt ringosi vdd out gnd
+*.iopin vdd
+*.iopin gnd
+*.opin out
+x1 vdd out net1 gnd invertercoba
+x2 vdd net1 net2 gnd invertercoba
+x3 vdd net2 out gnd invertercoba
+**.ends
+
+.end

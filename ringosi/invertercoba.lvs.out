@@ -1,0 +1,67 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_64Z3AY in circuit invertercoba (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_LGS3BL in circuit invertercoba (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: invertercoba                    |Circuit 2: invertercoba                    
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
+sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4 **Mismatch**             |Number of nets: 5 **Mismatch**             
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: invertercoba                    |Circuit 2: invertercoba                    
+
+---------------------------------------------------------------------------------------
+Net: gnd                                   |Net: gnd                                   
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/4 = 1            |                                           
+                                           |                                           
+(no matching net)                          |Net: dummy_5                               
+                                           |  sky130_fd_pr__nfet_01v8/proxy4 = 1       
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: invertercoba                    |Circuit 2: invertercoba                    
+-------------------------------------------|-------------------------------------------
+gnd                                        |gnd                                        
+vdd                                        |vdd                                        
+in                                         |in                                         
+out                                        |out                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes invertercoba and invertercoba are equivalent.
+
+Final result: Netlists do not match.
+Port matching may fail to disambiguate symmetries.
